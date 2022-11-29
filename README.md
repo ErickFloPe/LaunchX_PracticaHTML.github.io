@@ -1,4 +1,4 @@
-# LaunchX_PracticaHTML.github.io
+# LaunchX_PracticaHTML
 Práctica de HTML para el curso FrontEnd de LaunchX Microsoft
 
 ![LOGO](./images/tacoTime.png)
