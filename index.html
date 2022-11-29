@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Time</title>
+</head>
+<body>
+    <header>                                                                    <!--Titulo-->
+        <h1>Taco Time</h1>
+    </header>
+
+    <img src="./images/tacoTime.png" alt="Logo Taco Time"/>                          <!--img insertar imagen-->
+    <hr>                                                                        <!--Linea de division-->
+
+    <section>                                                                   <!--Las secciones ayudan a organizar el codigo-->
+        <h2>Menú</h2>
+        <h3>Tacos tradicionales</h3>
+        <p>Todos incluyen cebollas y limones</p>
+        <ul>                                                                        <!--ul unorder list-->
+            <li>Bistec ............................$20</li>                         <!--li elemento de lista-->
+            <li>Pastor ............................$16</li>
+            <li>Cabeza ............................$15</li>
+            <li>Chorizo ...........................$16</li>
+        </ul>
+
+        <h3>Tacos especiales</h3>
+        <p>Todos incluyen cebollas, limones y refresco en la compra de 5 tacos</p>  <!--p Parrafo-->
+        <ul>                                                                        <!--ul unorder list-->
+            <li><b>Bistec Azteca</b> ............................$30                <!--li elemento de lista, b es para letras negritas-->
+                <dd>- Bistec cocinado al mas puro estilo Mexicano</dd></li>         <!--dd descripcion de elemento-->
+            <li><b>Bistec Español</b> ............................$35
+                <dd>- Para los que se creen superiores</dd></li>
+            <li><b>Arrachera Atlantica</b> ......................$40  
+                <dd>- Sabor digno de Acuaman</dd></li>
+            <li><b>Pastor Noruego</b> ...........................$25
+                <dd>- Diseñado para los mas finos paladares</dd></li>
+            <li><b>Cabeza de unirconio</b>.......................$70  
+                <dd>- Cuenta la leyenda que cura cualquier enfermedad</dd></li>
+        </ul>
+    </section>
+    <hr>
+
+    <section>
+        <h2>Información</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>                        <!--tr(table row) Fila de la tabla-->
+                <th>Nombre</th>         <!--th(table heading) son los titulos-->
+                <th>Ubicacion</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Norte</td>         <!--td(table data) son los datos que iran dentro de la tabla-->
+                <td><a href="https://goo.gl/maps/ktKv7wiJEzmZXmFq6" target="_blank">Anáhuac 769-c, Fundadores de Moroleon</a></td>
+                <td>L - D, 24h</td>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="https://goo.gl/maps/Z4LssMfZvCeLfkUF7" target="_blank">Zona Centro, 38800 Moroleón</a></td>
+                <td>L - D, 5pm - 11pm</td>
+                
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="https://goo.gl/maps/fs3bEGxJ43jBB9jr7" target="_blank">Ponciano Vega 190, Insurgentes</a></td>
+                <td>L - S, 10am - 4pm</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <section>
+        <h2>Pedidos</h2>
+        <h3>Haz tu pedido aqui :)</h3>
+        <form action="">    <!--Indica que se envian datos del formulario. Al estar vacio la pagina se recarga con los parametros seleccionados-->
+            <P>¿De qué sucursal quieres los tacos?</P>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
+
+            <p>¿De qué tacos quieres?</p>
+            <!--Input de seleccion multiple-->
+            <input type="checkbox" id="Bistec" name="Bistec" value="Bistec">
+            <label for="Bistec">Bistec</label>
+            <input type="number" id="BistecNumber" name="BistecNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+            <label for="topping2">Pastor</label>
+            <input type="number" id="PastorNumber" name="PastorNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Cabeza" name="Cabeza" value="Cabeza">
+            <label for="topping3">Cabeza</label>
+            <input type="number" id="CabezaNumber" name="CabezaNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+            <label for="topping3">Chorizo</label>
+            <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Azteca" name="Azteca" value="Azteca">
+            <label for="Bistec">Azteca</label>
+            <input type="number" id="AztecaNumber" name="AztecaNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Español" name="Español" value="Español">
+            <label for="topping2">Español</label>
+            <input type="number" id="EspNumber" name="EspNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Atlantica" name="Atlantica" value="Atlantica">
+            <label for="topping3">Atlantica</label>
+            <input type="number" id="AtlanticaNumber" name="AtlanticaNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="Noruego" name="Noruego" value="Noruego">
+            <label for="topping3">Noruego</label>
+            <input type="number" id="NoruegoNumber" name="NoruegoNumber" placeholder="¿Cuántos?">
+            <br>
+            <input type="checkbox" id="unirconio" name="unirconio" value="unirconio7">
+            <label for="topping3">Unirconio</label>
+            <input type="number" id="UnicornNumber" name="UnicornNumber" placeholder="¿Cuántos?">
+            <br><br>
+
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?">
+            <br>
+            <label for="Telefono">Telefono:</label><br>
+            <input type="tel" id="Telefono" name="Telefono" placeholder="¿Cuál es tu numero?">
+            <br>
+            <label for="Direccion">Direccion:</label><br>
+            <input type="text" id="Direccion" name="Direccion" placeholder="¿Cuál es tu domicilio?">
+            <br>
+
+            <button type="submit">Enviar pedido</button><br><br>
+        </form>
+
+    </section>
+
+</body>
+</html>
